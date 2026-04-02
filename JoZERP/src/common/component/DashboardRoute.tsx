@@ -31,7 +31,7 @@ const PATHS = {
   ALUMNI_FOOTPRINT: "alumni-footprint",
   EXAM_MANAGEMENT: "exam-management",
   FEES_COLLECTION: "fee-collection",
-  FEES_MANAGEMENT: "fee_management",
+  FEES_MANAGEMENT: "fee-management",
   HOSTEL_MANAGEMENT: "hostel-management",
   STUDENT_MANAGEMENT: "student-management",
   TRAINING_PLACEMENT: "training-placement",
