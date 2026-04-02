@@ -1,0 +1,145 @@
+/* CARD */
+.graduate-card {
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  padding: 18px;
+  box-shadow: 0 2px 4px rgba(16, 24, 40, 0.06);
+  transition: 0.3s;
+  box-sizing: border-box;
+  display: flex;              
+  flex-direction: column;     
+  justify-content: space-between;  
+  min-height: 30px;
+  margin-top: -23px;
+  
+}
+
+.graduate-card:hover {
+  transform: translateY(-4px);
+}
+
+/* HEADER */
+.graduate-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 70px; 
+  
+
+}
+
+.graduate-header h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #111827;
+  text-align: left;
+  line-height: 1.2;
+  margin-top: -30px;
+}
+
+.graduate-header p {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+  margin-top: -10px;
+  text-align: left;
+}
+/* JM AVATAR */
+.Alumni-avatar {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #BEDEEF;
+  color: #5f7d8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: -30px;
+}
+
+
+
+/* ROLE BOX */
+.graduate-role {
+  background:#cbc6c62e;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: left;
+  margin-top: -10px;
+
+
+}
+
+.graduate-role p {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: left;
+  margin: 5px 0;
+
+}
+
+.graduate-role h4 {
+  font-size: 12px;
+  margin: 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+.graduate-role span {
+  font-size: 12px;
+  color: #4b5563;
+  text-align: left;
+}
+
+/* BUTTON AREA */
+.graduate-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+.graduate-name {
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* REQUEST BUTTON */
+.mentor-btn {
+  background: #009580;
+  color: white;
+  border: #0d5f59;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.mentor-btn:hover {
+  background: #0d5f59;
+}
+
+/* LINKEDIN BUTTON */
+.linkedin-btn {
+  width: 39px;
+  height: 38px;
+  border: 1px solid #97b4ee;
+  background: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+
+}
+.graduate-info {
+  flex: 1;
+  min-width: 0;
+}

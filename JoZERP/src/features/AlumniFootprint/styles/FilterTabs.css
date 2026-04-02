@@ -1,0 +1,37 @@
+/* Wrapper (prevents right side shifting) */
+.filter-tabs-wrapper {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+/* Tabs Container */
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.filter-tabs button {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Hover */
+.filter-tabs button:hover {
+  background: #f0fdfa;
+}
+
+/* Active Button */
+.filter-tabs .active {
+  background:#009580;
+  color: #ffffff;
+  border-color: #009580;
+}

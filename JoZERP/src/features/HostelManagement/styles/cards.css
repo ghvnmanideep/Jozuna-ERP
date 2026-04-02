@@ -1,0 +1,51 @@
+.room-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.room-card{
+  background:white;
+  border-radius:14px;
+  padding:14px 18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:600;
+  color:#414141;
+  cursor:pointer;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+  transition:0.2s;
+}
+
+.room-card:hover{
+  transform:translateY(-2px);
+}
+
+.room-number{
+  font-size:15px;
+}
+
+.beds{
+  display:flex;
+  gap:6px;
+}
+
+.bed{
+  font-size:14px;
+}
+
+.occupied{
+  color:#22c55e;
+}
+
+.empty{
+  color:#d1d5db;
+}
+
+.maintenance{
+  background:#FAE6E6;
+  color:#E54240;
+}

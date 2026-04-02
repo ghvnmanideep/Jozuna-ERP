@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Vigneshwaran M",
+    "degree": "Class of 2019 - B.Tech CS",
+    "role": "Senior AI Engineer",
+    "company": "Mountain View",
+    "location": "CA",
+    "batch": "All"
+  },
+  {
+    "id": 2,
+    "name": "Santhosh Kumar",
+    "degree": "Class of 2021 - B.Arch",
+    "role": "Sustainable Designer",
+    "company": "Zaha Hadid Architects",
+    "location": "London",
+    "batch": "2024"
+  },
+  {
+    "id": 3,
+    "name": "Sofia Rodriguez",
+    "degree": "Class of 2018 - MBA",
+    "role": "Product Lead",
+    "company": "Amazon",
+    "location": "Seattle, WA",
+    "batch": "2018"
+  },
+  {
+    "id": 4,
+    "name": "Alex Johnson",
+    "degree": "Sustainable Designer",
+    "role": "Product Manager",
+    "company": "Facebook",
+    "location": "Seattle, WA",
+    "batch": "All"
+  }
+]

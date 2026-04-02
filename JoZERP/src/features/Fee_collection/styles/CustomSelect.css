@@ -1,0 +1,73 @@
+.select-container {
+  position: relative;
+  width: 100%;
+}
+
+/* SELECT BOX */
+
+.select-box {
+  border: 1px solid #cfd6df;
+  background: white;
+  height: 48px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 0 16px;
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: #212121;
+}
+
+.select-box.placeholder {
+  color: #cfd6df;
+}
+
+/* ARROW */
+
+.customarrow {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.customarrow.open {
+  transform: rotate(180deg);
+}
+
+/* DROPDOWN */
+
+.custom-select-dropdown {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* DROPDOWN ITEM */
+
+.custom-select-item {
+  padding: 14px 16px;
+  cursor: pointer;
+  font-size: 13px;
+  background: white;
+  user-select: none;
+  text-align: left;
+}
+
+.custom-select-item:hover {
+  background: #f3f4f6;
+}
+
+/* REMOVE GREEN TEXT SELECTION */
+
+.custom-select-item::selection {
+  background: transparent;
+}

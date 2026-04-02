@@ -1,0 +1,46 @@
+[
+  {
+    "feeHead": "Tuition Fee",
+    "feeType": "Government",
+    "semesterYear": "Year 1",
+    "amount": 2500.00
+  },
+  {
+    "feeHead": "Tuition Fee",
+    "feeType": "Management",
+    "semesterYear": "Year 1",
+    "amount": 5500.00
+  },
+  {
+    "feeHead": "Tuition Fee",
+    "feeType": "Government",
+    "semesterYear": "Year 2",
+    "amount": 3500.00
+  },
+  {
+    "feeHead": "Tuition Fee",
+    "feeType": "Management",
+    "semesterYear": "Year 2",
+    "amount": 7500.00
+  },
+  {
+    "feeHead": "Hostel rent",
+    "feeType": "Management",
+    "semesterYear": "Semester 1",
+    "amount": 1200.00
+  },
+  {
+    "feeHead": "Hostel rent",
+    "feeType": "Government",
+    "semesterYear": "Semester 2",
+    "amount": 1200.00
+  },
+  {
+    "feeHead": "Bus Transport",
+    "feeType": "Standard(All)",
+    "semesterYear": "Semester 1",
+    "amount": 1200.00
+  }
+  
+  
+]

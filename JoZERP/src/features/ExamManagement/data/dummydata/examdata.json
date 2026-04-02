@@ -1,0 +1,61 @@
+[
+  { "courseName": "CS-401: Artificial Intelligence And Machine Learning" , "enrolled": 120, "evaluated": 120, "instructor": "Dr. Alan Turing", "status": "Completed" },
+  { "courseName": "MA-202: Advanced Calculus", "enrolled": 85, "evaluated": 62, "instructor": "Prof. Euler Prof. Euler Prof. Euler Prof. Euler Prof. Euler Prof. Euler", "status": "In Progress" },
+  { "courseName": "PH-301: Quantum Mechanics", "enrolled": 90, "evaluated": 90, "instructor": "Dr. Feynman", "status": "Completed" },
+  { "courseName": "CH-210: Organic Chemistry", "enrolled": 75, "evaluated": 50, "instructor": "Dr. Curie Prof. Euler Prof. Euler", "status": "In Progress" },
+  { "courseName": "EN-101: English Literature ", "enrolled": 60, "evaluated": 60, "instructor": "Prof. Shakespeare", "status": "Completed" },
+
+  { "courseName": "BI-220: Genetics", "enrolled": 70, "evaluated": 45, "instructor": "Dr. Mendel", "status": "In Progress" },
+  { "courseName": "CS-305: Data Structures", "enrolled": 110, "evaluated": 110, "instructor": "Dr. Knuth", "status": "Completed" },
+  { "courseName": "EC-201: Microeconomics", "enrolled": 95, "evaluated": 80, "instructor": "Prof. Adam Smith uncle", "status": "In Progress" },
+  { "courseName": "HS-110: World History", "enrolled": 65, "evaluated": 65, "instructor": "Dr. Herodotus", "status": "Completed" },
+  { "courseName": "GE-150: Physical Geography", "enrolled": 55, "evaluated": 30, "instructor": "Prof. Humboldt", "status": "In Progress" },
+
+  { "courseName": "CS-410: AI Fundamentals", "enrolled": 130, "evaluated": 130, "instructor": "Dr. McCarthy", "status": "Completed" },
+  { "courseName": "MA-310: Linear Algebra", "enrolled": 100, "evaluated": 70, "instructor": "Prof. Gauss", "status": "In Progress" },
+  { "courseName": "PH-210: Thermodynamics", "enrolled": 85, "evaluated": 85, "instructor": "Dr. Kelvin", "status": "Completed" },
+  { "courseName": "CH-110: Inorganic Chemistry", "enrolled": 60, "evaluated": 40, "instructor": "Dr. Dalton", "status": "In Progress" },
+  { "courseName": "EN-210: Creative Writing", "enrolled": 50, "evaluated": 50, "instructor": "Prof. Hemingway", "status": "Completed" },
+
+  { "courseName": "BI-101: Biology Basics", "enrolled": 90, "evaluated": 65, "instructor": "Dr. Darwin", "status": "In Progress" },
+  { "courseName": "CS-220: Algorithms", "enrolled": 120, "evaluated": 120, "instructor": "Dr. Dijkstra", "status": "Completed" },
+  { "courseName": "EC-310: Macroeconomics", "enrolled": 80, "evaluated": 55, "instructor": "Prof. Keynes", "status": "In Progress" },
+  { "courseName": "HS-205: Modern History", "enrolled": 70, "evaluated": 70, "instructor": "Dr. Toynbee", "status": "Completed" },
+  { "courseName": "GE-210: Climate Studies", "enrolled": 60, "evaluated": 35, "instructor": "Prof. Lovelock", "status": "In Progress" },
+
+  { "courseName": "CS-330: Web Development", "enrolled": 140, "evaluated": 140, "instructor": "Dr. Berners-Lee", "status": "Completed" },
+  { "courseName": "MA-101: Basic Algebra", "enrolled": 110, "evaluated": 90, "instructor": "Prof. Euclid", "status": "In Progress" },
+  { "courseName": "PH-101: Mechanics", "enrolled": 95, "evaluated": 95, "instructor": "Dr. Newton", "status": "Completed" },
+  { "courseName": "CH-305: Biochemistry", "enrolled": 75, "evaluated": 50, "instructor": "Dr. Watson", "status": "In Progress" },
+  { "courseName": "EN-305: Poetry", "enrolled": 45, "evaluated": 45, "instructor": "Prof. Frost", "status": "Completed" },
+
+  { "courseName": "BI-305: Microbiology", "enrolled": 80, "evaluated": 60, "instructor": "Dr. Pasteur", "status": "In Progress" },
+  { "courseName": "CS-450: Deep Learning", "enrolled": 100, "evaluated": 100, "instructor": "Dr. Hinton", "status": "Completed" },
+  { "courseName": "EC-101: Economics Basics", "enrolled": 120, "evaluated": 85, "instructor": "Prof. Ricardo", "status": "In Progress" },
+  { "courseName": "HS-101: Ancient Civilizations", "enrolled": 60, "evaluated": 60, "instructor": "Dr. Thucydides", "status": "Completed" },
+  { "courseName": "GE-101: Earth Science", "enrolled": 70, "evaluated": 40, "instructor": "Prof. Wegener", "status": "In Progress" },
+
+  { "courseName": "CS-120: Programming Basics", "enrolled": 150, "evaluated": 150, "instructor": "Dr. Hopper", "status": "Completed" },
+  { "courseName": "MA-220: Probability", "enrolled": 95, "evaluated": 70, "instructor": "Prof. Bayes", "status": "In Progress" },
+  { "courseName": "PH-330: Optics", "enrolled": 85, "evaluated": 85, "instructor": "Dr. Young", "status": "Completed" },
+  { "courseName": "CH-220: Analytical Chemistry", "enrolled": 65, "evaluated": 45, "instructor": "Dr. Avogadro", "status": "In Progress" },
+  { "courseName": "EN-220: Drama", "enrolled": 50, "evaluated": 50, "instructor": "Prof. Ibsen", "status": "Completed" },
+
+  { "courseName": "BI-410: Evolution", "enrolled": 75, "evaluated": 55, "instructor": "Dr. Wallace", "status": "In Progress" },
+  { "courseName": "CS-500: Cloud Computing", "enrolled": 130, "evaluated": 130, "instructor": "Dr. Bezos", "status": "Completed" },
+  { "courseName": "EC-220: Public Finance", "enrolled": 85, "evaluated": 60, "instructor": "Prof. Musgrave", "status": "In Progress" },
+  { "courseName": "HS-310: European History", "enrolled": 70, "evaluated": 70, "instructor": "Dr. Churchill", "status": "Completed" },
+  { "courseName": "GE-310: Oceanography", "enrolled": 55, "evaluated": 35, "instructor": "Prof. Cousteau", "status": "In Progress" },
+
+  { "courseName": "CS-210: Databases", "enrolled": 120, "evaluated": 120, "instructor": "Dr. Codd", "status": "Completed" },
+  { "courseName": "MA-410: Differential Equations", "enrolled": 90, "evaluated": 65, "instructor": "Prof. Laplace", "status": "In Progress" },
+  { "courseName": "PH-410: Astrophysics", "enrolled": 80, "evaluated": 80, "instructor": "Dr. Hawking", "status": "Completed" },
+  { "courseName": "CH-410: Physical Chemistry", "enrolled": 70, "evaluated": 50, "instructor": "Dr. Gibbs", "status": "In Progress" },
+  { "courseName": "EN-410: Linguistics", "enrolled": 60, "evaluated": 60, "instructor": "Prof. Chomsky", "status": "Completed" },
+
+  { "courseName": "BI-220: Ecology", "enrolled": 75, "evaluated": 55, "instructor": "Dr. Odum", "status": "In Progress" },
+  { "courseName": "CS-350: Cybersecurity", "enrolled": 110, "evaluated": 110, "instructor": "Dr. Schneier", "status": "Completed" },
+  { "courseName": "EC-410: International Economics", "enrolled": 95, "evaluated": 70, "instructor": "Prof. Krugman", "status": "In Progress" },
+  { "courseName": "HS-410: American History", "enrolled": 65, "evaluated": 65, "instructor": "Dr. Zinn", "status": "Completed" },
+  { "courseName": "GE-410: Environmental Science", "enrolled": 60, "evaluated": 40, "instructor": "Prof. Carson", "status": "In Progress" }
+]

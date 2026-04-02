@@ -1,0 +1,85 @@
+.room-map-wrapper {
+  padding: 40px;
+  background: #f6f8fb;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.top-space {
+  height: 120px; 
+}
+
+.section-title {
+  margin-bottom: 6px;
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 22px;
+}
+
+.sub-text {
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 22px;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.room-tile {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.room-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.room-id {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.icon-row {
+  display: flex;
+  gap: 6px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.occupied {
+  color: #27ae60;
+}
+
+.available {
+  color: #dcdfe6;
+}
+
+.maintenance {
+  background: #fdeaea;
+  border: 1px solid #f5b5b5;
+}
+
+.maintenance-text {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.room-section {
+ margin-top: 10px;
+}
+
+.room-allocation-map {
+  margin-left: -10px;
+}

@@ -1,0 +1,30 @@
+/* ============================= */
+/* Exam Header */
+/* ============================= */
+
+
+
+.exam-management-exam-header-left {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1vw, 0.75rem);
+  flex-wrap: wrap;
+}
+
+.exam-management-exam-title {
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
+  font-weight: 400;
+  color: #3c3c3c;
+  padding-left: 0.4rem;
+  line-height: 1.4;
+}
+
+.exam-management-ay-badge {
+  background-color: #BEDEEF;
+  font-size: clamp(0.65rem, 0.9vw, 0.75rem);
+  font-weight: 400;
+  padding: clamp(0.2rem, 0.5vw, 0.35rem)
+           clamp(0.5rem, 1vw, 0.75rem);
+  border-radius: 0.25rem;
+  white-space: nowrap;
+}

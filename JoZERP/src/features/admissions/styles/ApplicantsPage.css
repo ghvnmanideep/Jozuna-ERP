@@ -1,0 +1,498 @@
+/* ================= PAGE ================= */
+/* .applicants-page {
+  padding: 20px;
+  font-family: "Mazzard";
+  font-weight: 10px;
+} */
+ .applicants-page {
+  padding: 20px 24px;  
+  background: #f7f9fa;
+  min-height: 100vh;    
+  overflow-y: auto;     
+  font-family: "Mazzard";
+}
+
+/* ================= HEADER (MAIN ROW) ================= */
+.applicants-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* ================= LEFT SECTION ================= */
+.topbar-left {
+  display: flex;
+  align-items: right;
+  gap: 18px;
+  flex: 1;
+}
+ 
+/* inline filters */
+.filters-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* ================= BACK BUTTON ================= */
+.back-btn {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #2f3b4a;
+}
+
+.back-btn:hover {
+  opacity: 0.8;
+}
+
+.back-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* ================= ACTION BUTTON GROUP ================= */
+
+/* ACTION BUTTONS */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* ICON SIZE */
+.action-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ================= ICON BUTTON ================= */
+.icon-btn {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #eef4f8;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.icon-btn img {
+  width: 15px;   
+  height: 15px;  
+  object-fit: contain;
+}
+
+/* Hover */
+.icon-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Colors */
+.icon-btn.approve {
+  color: #1ba784;
+}
+
+.icon-btn.reject {
+  color: #e74c3c;
+}
+
+.icon-btn.waitlist {
+  color: #34495e;
+}
+
+/* ================= RIGHT SECTION (FILTERS) ================= */
+
+/* RIGHT SECTION */
+.applicants-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  min-width: 160px;
+}
+
+.dropdown-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2f3b4a;
+}
+
+.dropdown-icon {
+  font-size: 10px;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+  z-index: 100;
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #f0f0f0;
+}
+
+/* ================= ADVANCED FILTER BUTTON ================= */
+.filter-btn {
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* ================= EXPORT BUTTON ================= */
+
+.export-btn{
+  display:flex;
+  align-items:center;
+  background:#0F8F7E;
+  border-radius:8px;
+  overflow:hidden;
+  cursor:pointer;
+  height:45px;
+}
+
+/* Export text */
+
+.export-text{
+  padding:0 18px;
+  color:white;
+  font-size:17px;
+  font-weight:500;
+}
+
+/* Divider */
+
+.export-divider{
+  width:0px;
+  height:100%;
+  background:rgba(255,255,255,0.3);
+}
+
+/* Arrow section */
+
+.export-icon{
+  padding:17px 13px;
+  color:white;
+  font-size:9px;
+  background:#0c7c6d;
+  display:flex;
+  align-items:center;
+}
+
+/* DIVIDER */
+.divider {
+  width: 2px;
+  height: 38px;
+  background-color: #d1d5db;
+}
+
+.cutoff {
+  color: #28C949;     
+  font-weight: 600;  
+}
+
+
+
+/* ACTION BOX GROUP */
+.action-box-group {
+  display: flex;
+  gap: 8px;
+}
+
+/* BOX */
+.action-box {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  background: #D2E9F5;
+  border: 1px solid #e0e0e0;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ICON */
+.action-box img {
+  width: 14px;
+  height: 14px;
+}
+
+/* HOVER */
+.action-box:hover {
+  transform: scale(1.05);
+}
+
+.action-box.approve:hover {
+  background: #eaffea;
+  border-color: #28C949;
+}
+
+.action-box.reject:hover {
+  background: #ffecec;
+  border-color: #FF4D4F;
+}
+
+.action-box.wait:hover {
+  background: #fff7e6;
+  border-color: #9B8811;
+}
+
+/* STATUS TEXT */
+.status {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status.approved {
+  color: #28C949;
+}
+
+.status.rejected {
+  color: #DC2628;
+}
+
+.status.wait {
+  color: #FFA500;
+  
+}
+
+.status.enrolled {
+  color: #1890FF;
+}
+
+
+/* ===== STATUS COMMON ===== */
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 10px;
+}
+
+/* APPROVED */
+.status.approved {
+  background-color: #E3FFE9;
+  color: #28C949;
+  font-family: "Mazzard";
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+  
+}
+
+/* REJECTED */
+.status.rejected {
+  background-color: #FFEEEE;
+  color: #DC2628;
+  font-family: "Mazzard";
+  font-size: 13px;
+  font-weight: 500;
+   padding: 8px;
+  border-radius: 6px;
+}
+
+/* WAIT LISTED */
+.status.wait {
+  background-color: #FFF9D3;
+  color: #4B5563;
+  font-family: "Mazzard";
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.status.ready {
+  background:#BAE09F;
+  color: #4B5563;
+  font-family: "Mazzard";
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.status.declined {
+  background: #EAEAEA;
+  color: #4B5563;
+  font-family: "Mazzard";
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.status.noresponse {
+  background: #EBF1FB;
+  color: #4B5563;
+  font-family: "Mazzard";
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* ENROLLED */
+.status.enrolled {
+  background-color: #378300;
+  color: #FFFFFF;
+  font-family: "Mazzard";
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-box-group {
+  display: flex;
+  gap: 8px;
+}
+
+.action-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ICON COLORS */
+.action-box.approve {
+  background-color: #FFFFFF;
+  border-color: #28C949;
+}
+
+.action-box.reject {
+  background-color: #FFFFFF;
+  border-color: #DC2628;
+}
+
+.action-box.wait {
+  background-color: #FFFFFF;
+  border-color: #9B8811;
+}
+
+.action-box img {
+  width: 16px;
+  height: 16px;
+}
+
+.status.ready {
+  background-color: #e6f7ec;
+  color: #1ba784;
+}
+
+.status.declined {
+  background-color: #f5f5f5;
+  color: #616161;
+}
+
+.status.noresponse {
+  background-color: #edf1f7;
+  color: #5f6b7a;
+}
+
+/* CONTAINER */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* BUTTON DEFAULT (ICON ONLY) */
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 5px;
+  background: #eef2f6;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+/* ICON */
+.icon-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* EXPANDED STATE */
+.icon-btn.expanded {
+  width: auto;
+  padding: 0 8px;
+  background: white; 
+  gap: 8px;
+}
+
+/* TEXT INSIDE BUTTON */
+.icon-btn span {
+  font-size: 14px;
+  font-weight: 530;
+  white-space: nowrap;
+}

@@ -1,0 +1,40 @@
+.hostel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hostel-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left !important;
+}
+
+.hostel-dropdowns {
+  display: flex;
+  gap: 12px;
+}
+
+.page-container {
+  width: 100%;
+  text-align: left !important;
+}
+
+.dropdown {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background-color: #f8fafc;
+  font-size: 14px;
+  font-weight: 500;
+  color: #344054;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.dropdown:hover {
+  border-color: #98a2b3;
+  background-color: #eef2f7;
+}

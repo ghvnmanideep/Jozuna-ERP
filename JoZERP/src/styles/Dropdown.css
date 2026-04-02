@@ -1,0 +1,118 @@
+/* DROPDOWN WRAPPER */
+
+ .common-dropdown {
+   position: relative;
+   display: inline-block;
+ }
+
+
+ /* DROPDOWN BUTTON */
+
+.common-dropdown-btn {
+  width: 140px;
+  height: 34px;
+  padding: 0 12px;  
+  /* padding: 5px 10px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 6px;
+  background: #05253E0D;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+ /* TEXT */
+.common-dropdown-text {
+  flex: 1;
+  overflow: hidden;        /* ✅ required */
+  text-overflow: ellipsis; /* ✅ dots */
+  white-space: nowrap;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #202020;
+   max-width: 120px; /* keep limit for other values */
+}
+
+ /* ICON */
+
+ .common-dropdown-icon {
+   font-size: 10px;
+    flex-shrink: 0;   /* ✅ IMPORTANT */
+    margin-left: 6px;
+ }
+
+
+ /* DROPDOWN MENU */
+
+ .common-dropdown-menu {
+   position: absolute;
+   top: 38px;
+   left: 0;
+   min-width: 100%;
+   width: max-content;
+   background: #ffffff;
+   border-radius: 6px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+   z-index: 10;
+   overflow: hidden;
+ }
+
+
+ /* DROPDOWN ITEM */
+
+ .common-dropdown-item {
+   padding: 10px 14px;
+   font-size: 14px;
+   cursor: pointer;
+   text-align: left;
+   white-space: nowrap;
+ }
+
+
+ /* HOVER */
+
+ .common-dropdown-item:hover {
+   background: #f3f3f3;
+ }
+
+ /* TOOLTIP WRAPPER */
+.dropdown-btn-wrapper {
+  position: relative;
+  /* display: inline-block; */
+  width: 100%;
+}
+
+/* ===== TOOLTIP ===== */
+
+.tooltip {
+  position: absolute;
+   top: calc(100% + 6px);      /* ✅ better position */
+  left: 0;
+  margin-top: 4px;
+  background: #555;
+  color: #fff;
+
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  font-size: 11px;
+  white-space: nowrap;
+
+  display: none;
+  z-index: 9999;
+}
+.dropdown-btn-wrapper:hover .tooltip {
+  display: block;
+}
+
+.no-ellipsis {
+  overflow: visible ;
+  text-overflow: unset;
+  white-space: nowrap;
+}

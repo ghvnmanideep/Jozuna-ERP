@@ -1,0 +1,37 @@
+.pipeline-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pipeline-card.active {
+  transform: translateY(-6px);
+  border: 2px solid #9b8811;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pipeline-stats {
+  display: flex;
+  font-size: 22px;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.pipeline-stats {
+  font-size:22px;
+}
+
+.accepted {
+  background: #e3f7e8;
+  padding: 12px;
+  border-radius: 10px;
+  flex: 1;
+  font-size: 26px;
+}
+
+.waitlist {
+  background: #fff9d3;
+  padding: 12px;
+  border-radius: 10px;
+  flex: 1;
+  font-size: 26px;
+}

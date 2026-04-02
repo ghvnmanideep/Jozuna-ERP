@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "MazzardH";
+  src: local("MazzardH-Medium"),
+    url("../assets/fonts/MazzardH-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MazzardH";
+  src: local("MazzardH-Black"),
+    url("../assets/fonts/MazzardH-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MazzardH";
+  src: local("MazzardH-Regular"),
+    url("../assets/fonts/MazzardH-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url("../assets/fonts/Poppins.ttf") format("truetype");
+}
+:root {
+  /* Student Management Colors */
+  --sm-primary-green: #14b034; /* Green used for Paid/Not Paid badges and values */
+  --sm-primary-teal: #009580;  /* Teal used for upload buttons */
+  --sm-primary-teal-hover: #0f766e; /* Hover state for teal buttons */
+  
+  --sm-bg-main: #f8fafc;       /* Main background for pages and sections */
+  --sm-bg-card: #ffffff;       /* Background for cards and panels */
+  --sm-bg-light-green: #deffe5; /* Light green background for paid rows */
+  --sm-bg-avatar: #e1f5ff;     /* Background for profile avatars */
+  --sm-bg-success-light: #f0fdf4; /* Background for success badges/standing */
+  --sm-bg-green-soft: #e3ffe9; /* Soft green background for CGPA badge */
+  --sm-bg-purple-light: #e3e2ff; /* Light purple for file pills */
+  --sm-bg-select: #e7e9e9;     /* Background for select inputs and filter buttons */
+  --sm-bg-icon-btn: #eaeaea;   /* Background for action icon buttons */
+  
+  --sm-border-light: #f1f5f9;  /* Light border for cards and panels */
+  --sm-border-divider: #d7d7d7; /* Divider color for summaries */
+  --sm-border-select: #e5e8ec; /* Border color for select inputs */
+  --sm-border-divider-profile: #ebebeb; /* Horizontal/vertical dividers in profile */
+  --sm-border-tabs: #b8d0e9;   /* Underline border for tab navigation */
+  --sm-border-success: #dcfce7; /* Border for success badges/standing */
+  
+  --sm-text-dark: #1a1d2e;     /* Darkest text for titles and active tabs */
+  --sm-text-main: #202020;     /* Main body text color */
+  --sm-text-muted: #6b7280;    /* Muted text for secondary info (credits, meta) */
+  --sm-text-avatar: #0ea5e9;   /* Text color for profile avatar initials */
+  --sm-text-success: #22c55e;  /* Text color for success/active states */
+  --sm-text-select: #1f2937;   /* Text color for select inputs */
+  --sm-text-white: #ffffff;    /* Text color for white backgrounds */
+
+  /* Project Theme Variables */
+  --white-color: #ffffff;
+  --bot-blue: #178ece;
+  --primary-blue: #0369a1;
+  --secondary-blue: #005596;
+  --heading-dark: #1e293b;
+  --background-lite: #f8fafc;
+  --border-lite: #f1f5f9;
+  --text-muted-lite: #64748b;
+  --text-muted-dark: #475569;
+  --accent-blue: #3b82f6;
+  --light-blue-bg: #f0f9ff;
+  --hover-blue-bg: #e0f2fe;
+  --light-teal-bg: #bedeef;
+
+}

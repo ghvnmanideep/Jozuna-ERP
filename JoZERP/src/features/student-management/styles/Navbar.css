@@ -1,0 +1,117 @@
+.sm-page-header {
+  font-family: "Mazzard", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px; 
+  margin-bottom: 24px;
+  padding: 16px 0; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--sm-bg-main); 
+}
+
+.sm-page-title {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--sm-text-main);
+  margin: 0;
+}
+
+.sm-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sm-select-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sm-select {
+  appearance: none;
+  background: var(--sm-bg-select); 
+  border: 1px solid var(--sm-border-select); 
+  border-radius: 8px;
+  padding: 8px 32px 8px 16px; 
+  font-size: 13px; 
+  color: var(--sm-text-select);
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 130px;
+}
+
+.sm-select-icon {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+  color: var(--sm-text-select);
+}
+
+
+.sm-adv-filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--sm-bg-select);
+  border: 1px solid var(--sm-border-select);
+  border-radius: 8px;
+  padding: 8px 14px; 
+  font-size: 13px; 
+  color: var(--sm-text-select);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 155px;
+  justify-content: space-between;
+}
+
+.sm-adv-filter-btn:hover {
+  background: #d1d5db; 
+}
+
+.sm-adv-filter-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 1024px) {
+  .sm-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .sm-filters {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sm-filters {
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .sm-select-wrapper {
+    flex: 1;
+    min-width: calc(50% - 10px);
+  }
+  
+  .sm-select {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sm-select-wrapper {
+    min-width: 100%;
+  }
+}

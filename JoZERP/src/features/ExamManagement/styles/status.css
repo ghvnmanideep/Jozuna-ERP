@@ -1,0 +1,17 @@
+.status {
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.status-completed {
+  background-color:#E3FFE9;
+  border: 1px solid #28C949;
+}
+
+.status-progress {
+  background-color: #FFF6E3;
+  border: 1px solid #FFAD0A;
+}

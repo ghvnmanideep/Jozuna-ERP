@@ -1,0 +1,21 @@
+/* ============================= */
+/* Root Setup Only */
+/* ============================= */
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "MazzardH";
+  background-color: #f5f7f9;
+  color: #1E1E1E;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

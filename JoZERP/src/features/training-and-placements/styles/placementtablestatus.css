@@ -1,0 +1,39 @@
+/* Base status style */
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: transparent;
+  align-items: center;
+}
+
+/* ✅ Completed (Green Outline) */
+.status-completed {
+  color: black;
+  border: 1.5px solid #22c55e;
+  background-color: rgba(34, 197, 94, 0.08);
+}
+
+/* ✅ In Progress / Tentative (Orange Outline) */
+.status-progress {
+  color: black;
+  border: 1.5px solid #f59e0b;
+  background-color: rgba(245, 158, 11, 0.08);
+}
+.placementcompany-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* LOGO STYLE */
+.placementcompany-logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  border-radius: 6px;
+  background-color: #f5f7fa;
+  padding: 2px;
+}

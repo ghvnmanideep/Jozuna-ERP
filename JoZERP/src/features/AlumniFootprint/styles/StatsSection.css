@@ -1,0 +1,74 @@
+.stats-wrapper {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Card */
+.stats-card {
+  flex: 1;
+  background: #BEDEEF;
+  padding:  15px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left content */
+.stats-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Icon */
+.stats-icon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+/* Value */
+.stats-value {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #202020;
+  text-align: left;
+}
+
+/* Text */
+.stats-text {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #374151;
+  white-space: nowrap;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Button */
+.stats-btn {
+  background: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  white-space: nowrap;
+}
+
+.stats-btn:hover {
+  background: #f3f4f6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-wrapper {
+    flex-direction: column;
+  }
+}

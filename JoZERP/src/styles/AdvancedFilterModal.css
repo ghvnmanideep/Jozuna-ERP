@@ -1,0 +1,243 @@
+.advanced-filter-dropdown {
+    box-sizing: border-box;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background: white;
+    border-radius: 12px;
+    padding: 25px 30px;
+    width: 640px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    font-family: "Outfit", sans-serif;
+    border: 1px solid #eaeaea;
+    z-index: 1000;
+}
+
+.modal-body {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+/* COLUMN STRUCTURE */
+.filter-column {
+    flex: 1;
+}
+
+/* Divider Line */
+.filter-column:not(:last-child) {
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Headings */
+.filter-column h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 18px 0;
+    padding: 0 15px;
+}
+
+/* Options */
+.filter-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.advancedfilter-option {
+    padding: 8px 15px;
+    font-size: 0.95rem;
+    color: #444;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.advancedfilter-option.selected {
+    font-weight: 500;
+    color: black;
+}
+
+/* Checkbox */
+.advancedfilter-option input[type="checkbox"] {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border: 1.5px solid #cfcfcf;
+    border-radius: 4px;
+    appearance: none;
+    background-color: white;
+    position: relative;
+}
+
+.advancedfilter-option input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: #2b3a9c;
+    font-size: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+/* Footer */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.reset-btn {
+    background: none;
+    border: none;
+    font-size: 0.95rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.view-btn {
+    background: #bfbfbf;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 26px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
+
+.view-btn.active {
+    background: #009580;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f2f5;
+    gap: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-item {
+    background: white;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    height: 36px;
+}
+
+.nav-item select {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-family: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+.advanced-filter-btn {
+    background: #05253E0D;
+    /* border: 1px solid #ced4da; */
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    height: 36px;
+    transition: all 0.2s;
+    margin-left: auto;
+}
+
+/* .advanced-filter-btn:hover {
+    background: #f8f9fa;
+    border-color: #adb5bd;
+} */
+
+.filter-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-icon img {
+    display: block;
+}
+
+.dropdown-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-arrow img {
+    display: block;
+    opacity: 1;
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 768px) {
+    .advanced-filter-dropdown {
+        width: calc(100vw - 40px);
+        max-width: 640px;
+        right: 0;
+        top: calc(100% + 5px);
+        padding: 15px 20px;
+    }
+
+    .modal-body {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .filter-column:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 15px;
+    }
+
+    .filter-column h3 {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+
+    .advancedfilter-option {
+        padding: 6px 5px;
+    }
+
+    .advanced-filter-wrapper {
+        width: 100%;
+    }
+
+    .advanced-filter-btn {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .advanced-filter-dropdown {
+        width: calc(100vw - 20px);
+        right: -10px;
+        /* Offset to center relative to screen if button is near edge */
+    }
+}

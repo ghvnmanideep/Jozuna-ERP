@@ -1,0 +1,63 @@
+/* ============================= */
+/* Main Container */
+/* ============================= */
+
+.exam-management-container {
+  padding: 1% 20px;
+  font-family: "MazzardH";
+  padding-right: 2%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================= */
+/* Top Section Grid */
+/* ============================= */
+
+.exam-management-top-section {
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  width: 100%;
+}
+
+/* ============================= */
+/* Large Tablet & Below */
+/* ============================= */
+
+@media (max-width: 64rem) {
+  .exam-management-top-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
+
+@media (max-width: 30rem) {
+  .exam-management-container {
+    padding: 0.5rem;
+  }
+
+  .exam-management-top-section {
+    gap: 1rem;
+  }
+}
+
+/* ============================= */
+/* Bottom Section */
+/* ============================= */
+
+.exam-management-course-evaluation-status {
+  flex: 1;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  min-height: 0;   /* IMPORTANT */
+}
+

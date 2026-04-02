@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Mazzard";
+  src: url("../assets/fonts/Mazzard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mazzard";
+  src: url("../assets/fonts/Mazzard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mazzard";
+  src: url("../assets/fonts/Mazzard-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Mazzard";
+}

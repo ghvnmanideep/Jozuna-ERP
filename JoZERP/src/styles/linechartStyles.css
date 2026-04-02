@@ -1,0 +1,91 @@
+.chart-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  height: 100%;
+}
+
+/* Wrapper specifically for the Recharts ResponsiveContainer */
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+  background: none;
+  border: none;
+  font-size: 28px;
+  padding: 10px;
+  transition: color 0.2s;
+  cursor: pointer;
+  color: #6bc7d4;
+}
+
+.nav-arrow:disabled {
+  cursor: not-allowed;
+  color: #e0e0e0;
+}
+
+/* Custom Tooltip Styles */
+.custom-tooltip {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.tooltip-label {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  color: #666;
+  font-size: 14px;
+}
+
+.tooltip-value {
+  margin: 0;
+  color: #6bc7d4;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.x-axis-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.x-axis-label {
+  position: relative;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+}
+
+.x-axis-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  white-space: nowrap;
+  transition: 0.2s ease;
+  z-index: 10;
+}
+
+.x-axis-label:hover .x-axis-tooltip {
+  visibility: visible;
+  opacity: 1;
+} 

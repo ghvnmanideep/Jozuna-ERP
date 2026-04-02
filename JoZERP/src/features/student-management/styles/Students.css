@@ -1,0 +1,90 @@
+.sm-left-panel {
+  font-family: "Mazzard", sans-serif;
+  width: 265px; 
+  flex-shrink: 0;
+  background: #ffffff;
+  padding: 8px 12px; 
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 180px);
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.sm-panel-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--sm-text-dark);
+  margin: 0 0 20px 0;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.sm-student-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; 
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 8px; /* Increased slightly for scrollbar space */
+}
+
+.sm-student-item {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.sm-student-item:hover {
+  background: var(--sm-bg-main);
+  transform: translateX(4px); 
+}
+
+.sm-student-item--active {
+  background: var(--sm-border-light);
+}
+
+.sm-student-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  background: var(--sm-bg-avatar); 
+  color: var(--sm-text-avatar); 
+}
+
+
+.sm-student-name {
+  font-size: 15px;
+  color: var(--sm-text-main);
+  font-weight: 400;
+  white-space: normal;  
+  overflow: visible;
+  flex: 1;
+  text-align: left; 
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .sm-left-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .sm-student-item {
+    padding: 8px;
+  }
+  .sm-student-name {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,472 @@
+/* ================= WRAPPER ================= */
+.academics-wrapper {
+  padding-left: 25px;
+  padding-right: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #eef2f5;
+  font-family: "Mazzard";
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+.academics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.academics-title {
+  font-size: 1.375rem;
+  font-weight: 200;
+  margin: 0;
+  color:rgb(84, 84, 84);
+}
+.academics-actions {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.academics-select,
+.academics-filter {
+  background: #e7e9e9;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #e5e8ec;
+  cursor: pointer;
+  color: rgb(84, 84, 84);
+}
+/* Selected dropdown text */
+.academics-select span {
+  max-width: 150px;   
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+/* Tooltip wrapper */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip box */
+.custom-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background-color: grey;
+  color: white;
+  border: 1px solid #dcdcdc;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+/* Show tooltip on hover */
+.tooltip-container:hover .custom-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.academics-btn-outline {
+  border: 1px solid #3EB97F;
+  color: #2b2f2d;
+  background: #ffffff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+.academics-btn-primary {
+  background: #3EB97F;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+.academics-filter {
+  background: #e7e9e9;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid #e5e8ec;
+  cursor: pointer;
+}
+.academics-filter-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+/* DROPDOWN WRAPPER */
+.academics-dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* DROPDOWN MENU */
+.academics-dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  padding: 4px 0;
+  min-width: 230px;
+  z-index: 1000;
+}
+/* DROPDOWN ITEM */
+.academics-dropdown-item {
+  padding: 8px 14px;        
+  font-size: 0.8125rem;          
+  text-align: left;        
+  cursor: pointer;
+  transition: background 0.2s ease;
+  color: #333;
+}
+.academics-dropdown-item:hover {
+  background: #f3f5f7;
+}
+/* ================= SUMMARY ================= */
+.academics-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 22px;
+  margin-bottom: 40px;
+}
+.academics-summary-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 18px;
+  position: relative;
+  min-height: 80px;
+  gap:15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* left align */
+  text-align: left;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+/* ICON */
+.academics-summary-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 40px;
+  height: 40px;
+  background: #e6f0f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.academics-summary-icon img {
+  width: 20px;
+  height: 20px;
+}
+/* TITLE */
+.academics-summary-card p {
+  font-size: 0.875rem;
+  margin: 0 0 12px 0;
+  color: rgb(67, 67, 67);
+}
+/* VALUE */
+.academics-summary-card h3 {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  margin: 0;
+}
+/* VACANT BADGE (RIGHT SIDE BELOW ICON) */
+.academics-badge {
+  position: absolute;
+  top: 70px;        /* under icon */
+  right: 18px;      /* aligned with icon */
+  background: #f1f3f5;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  color:#555;
+}
+.academics-badge strong{
+  font-weight: 600;
+  color: #000;
+}
+/* ================= FACULTY ================= */
+.academics-section-title {
+  font-size: 1.2rem;
+  font-weight: 450;
+  margin-bottom: 24px;
+  text-align: left;
+}
+/* GRID */
+.academics-faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+/* CARD */
+.academics-faculty-card {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+/* TOP ROW (ICON + COURSES) */
+.academics-faculty-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* ICON */
+.academics-faculty-icon {
+  width: 40px;
+  height: 40px;
+  background: #e6f0f6;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.academics-faculty-icon img {
+  width: 25px;
+  height: 25px;
+}
+/* COURSES */
+.academics-course-count {
+  font-size: 0.8125rem;
+  color: #8f8f8f;
+  margin-top: 6px;
+}
+/* BODY ROW */
+.academics-faculty-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* LEFT TEXT */
+.academics-faculty-text h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 8px 0;
+  text-align: left;
+}
+.academics-faculty-text p {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
+  text-align: left;
+}
+/* RIGHT PROGRESS */
+.academics-faculty-progress {
+  text-align: right;
+}
+.academics-progress-label {
+  font-size: 0.8125rem;
+  margin-bottom: 8px;
+}
+/* PROGRESS WRAPPER */
+.academics-progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.academics-progress-bar {
+  width: 60px;
+  height: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  background: #f0f0f0;
+}
+.academics-progress-green {
+  background: #3EB97F;
+}
+.academics-progress-red {
+  background: #E54240;
+}
+.academics-progress-percent {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  width: 10px;
+}
+.academic-table-card h4 {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 40px;
+}
+
+.academic-table-card .status {
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/*  OPEN (Green) */
+.academic-table-card .status-completed {
+  color: #1a1c1b;
+  border: 1.5px solid #22c55e;
+  background: rgba(34, 197, 94, 0.08);
+}
+
+/*  FULL (Orange like UI) */
+.academic-table-card .status-progress {
+  color: #0b0a0a;
+  border: 1.5px solid #ef8193;
+  background: rgba(193, 70, 70, 0.08);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 576px) {
+  .academics-wrapper {
+    padding: 16px;
+  }
+  /* Header */
+  .academics-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .academics-actions {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  /* Summary */
+  .academics-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .academics-summary-card {
+    min-height: auto;
+  }
+  .academics-badge {
+    position: static;
+    margin-top: 6px;
+  }
+  /* Faculty */
+  .academics-faculty-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .academics-faculty-body {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .academics-faculty-progress {
+    text-align: left;
+  }
+  .academics-progress-wrapper {
+    justify-content: flex-start;
+  }
+  .academics-progress-bar {
+    width: 100px;
+  }
+}
+/* Bold Course Name */
+.academic-table-card .course-name {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Bold Intake */
+.academic-table-card .intake-value {
+  font-weight: 600;
+  color: #1f2937;
+}
+/* ================= TABLET ================= */
+@media (min-width: 577px) and (max-width: 992px) {
+  .academics-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .academics-faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .academics-progress-bar {
+    width: 90px;
+  }
+}
+/* ================= LAPTOP ================= */
+@media (min-width: 993px) and (max-width: 1500px) {
+  .academics-summary-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .academics-faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .academics-progress-bar {
+    width: 80px;
+  }
+  
+}
+/* ================= DROPDOWNS MOBILE ================= */
+@media (max-width: 576px) {
+  .academics-dropdown {
+    width: 80%;
+  }
+  .academics-select {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .academics-dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .academics-dropdown-menu li {
+    white-space: nowrap;      /* prevent multi-line wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .academics-advanced-menu {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-40%);
+    width: 92vw;           /* viewport width based */
+    max-width: 350px;      /* prevent too wide */
+    box-sizing: border-box;
+  }
+}
+/* ================= DROPDOWNS TABLET ================= */
+@media (min-width: 577px) and (max-width: 992px) {
+  .academics-advanced-menu {
+    width: 340px;
+  }
+  .academics-advanced-columns {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+}
+/* ================= DROPDOWNS LAPTOP ================= */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .academics-advanced-menu {
+  width: 520px;      /* increase width */
+}
+}
